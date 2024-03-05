@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <header>
@@ -41,7 +42,7 @@ while($data = mysqli_fetch_array($query_mysql)){
     <td><?php echo $data['password']; ?></td>
     <td><?php echo $data['level']; ?></td>
     <td><?php echo $data['email']; ?></td>
-    <td ><a href='edit.php?id=<?php echo $data['id'];?>'>Edit</a></td>
+    <td class="edit"><a href='edit.php?id=<?php echo $data['id'];?>'>Edit</a></td>
     <td ><a href='delete.php?id=<?php echo $data['id'];?>'>Delete</a></td>
 
 </tr>
@@ -57,74 +58,6 @@ while($data = mysqli_fetch_array($query_mysql)){
 </body>
 <style>
 /* Reset default margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-}
-
-/* Style for header */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-/* Style for navigation */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    background-color: #f4f4f4;
-    overflow: hidden;
-}
-
-nav ul li {
-    float: left;
-}
-
-nav ul li a {
-    display: block;
-    padding: 10px 20px;
-    color: #333;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    background-color: #ddd;
-}
-
-/* Style for main content */
-main {
-    margin: 20px;
-}
-
-/* Style for table */
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-table th, table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-}
-
-table th {
-    background-color: #f2f2f2;
-    color: #333;
-    font-weight: bold;
-}
-
-/* Hover effect on table row */
-table tr:hover {
-    background-color: #f5f5f5;
-}
-
-/* Menghilangkan focus outline */
-.edit:focus, .delete:focus {
-    outline: none;
-    text-decoration: none;
-}
 
 
 /* Style for tombol Edit */
