@@ -11,33 +11,32 @@ body {
 }
 
 header {
-    background-color: #2ecc71; /* Warna header */
+    background-color: #333; /* Warna header */
     padding: 20px;
     color: #fff; /* Warna teks header */
     text-align: center;
 }
 
-nav {
-    background-color: #27ae60; /* Warna latar navigasi */
-}
-
 nav ul {
     list-style-type: none;
     padding: 10px;
+    background-color: #f4f4f4;
+    overflow: hidden;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    float: left;
 }
 
 nav ul li a {
-    color: #fff; /* Warna teks menu */
+    display: block;
+    padding: 10px 20px;
+    color: #333;
     text-decoration: none;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #ddd;
 }
 
 main {
@@ -51,8 +50,6 @@ section {
 }
 
 footer {
-    background-color: #2ecc71; /* Warna footer */
-    padding: 10px;
     text-align: center;
-    color: #fff; /* Warna teks footer */
+    margin-top: 50px;
 }

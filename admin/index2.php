@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Page</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -42,8 +42,8 @@ while($data = mysqli_fetch_array($query_mysql)){
     <td><?php echo $data['password']; ?></td>
     <td><?php echo $data['level']; ?></td>
     <td><?php echo $data['email']; ?></td>
-    <td class="edit"><a href='edit.php?id=<?php echo $data['id'];?>'>Edit</a></td>
-    <td ><a href='delete.php?id=<?php echo $data['id'];?>'>Delete</a></td>
+    <td ><a class="edit" href='edit.php?id=<?php echo $data['id'];?>'>Edit</a></td>
+    <td ><a class="delete" href='delete.php?id=<?php echo $data['id'];?>'>Delete</a></td>
 
 </tr>
 <?php } ?>
@@ -57,13 +57,13 @@ while($data = mysqli_fetch_array($query_mysql)){
     <script src="scripts.js"></script>
 </body>
 <style>
-/* Reset default margin and padding */
+    tr td a {
+        text-decoration: none;
+    }
 
-
-/* Style for tombol Edit */
-
-
-
+    footer {
+        text-align: center;
+        margin-top: 50px;
+    }
 </style>
-
 </html>
