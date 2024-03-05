@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styl.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -16,9 +16,9 @@
             <label class="logo">Tanam Sendiri</label>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="index3.html">Ide Tanaman</a></li>
-                <li><a href="index2.html">Tips Bertani</a></li>
-                <li><a href="index4.html">Folllow me</a></li>
+                <li><a href="index3.php">Ide Tanaman</a></li>
+                <li><a href="index2.php">Tips Bertani</a></li>
+                <li><a href="index4.php">Folllow me</a></li>
             </ul>
         </div>
         <div class="content">

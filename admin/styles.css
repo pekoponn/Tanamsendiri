@@ -1,0 +1,58 @@
+/* Reset style */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f7f4; /* Warna latar belakang */
+    color: #333; /* Warna teks */
+}
+
+header {
+    background-color: #2ecc71; /* Warna header */
+    padding: 20px;
+    color: #fff; /* Warna teks header */
+    text-align: center;
+}
+
+nav {
+    background-color: #27ae60; /* Warna latar navigasi */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff; /* Warna teks menu */
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #d1f2eb; /* Warna latar konten */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #2ecc71; /* Warna footer */
+    padding: 10px;
+    text-align: center;
+    color: #fff; /* Warna teks footer */
+}

@@ -11,12 +11,12 @@
         <div class="navbar">
             <label class="logo">Tanam Sendiri</label>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index3.html">Ide Tanaman</a></li>
-                <li><a href="index2.html">Tips Bertani</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="index3.php">Ide Tanaman</a></li>
+                <li><a href="index2.php">Tips Bertani</a></li>
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
                 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
-                <li><a href="index4.html">Folllow me</a></li>
+                <li><a href="index4.php">Folllow me</a></li>
             </ul>
         </div>
           
