@@ -69,6 +69,7 @@ table tr:hover {
 .delete {
     color: red;
     text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 

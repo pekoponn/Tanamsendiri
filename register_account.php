@@ -93,25 +93,47 @@
 
         <button type="Submit" name="Submit" >Submit</button>
     </form>
+    <?
     
-    <?php
+    if (isset($_POST['Submit'])) {
+        $nama= $_POST['nama'];
+        $username= $_POST['username'];
+        $password= $_POST['password'];
+        $level= $_POST['level'];
+        $email = $_POST['email'];
+        echo($password);
 
-        if (isset($_POST['Submit'])) {
-            $nama= $_POST['nama'];
-            $username= $_POST['username'];
-            $password= $_POST['password'];
-            $level= $_POST['level'];
-            $email = $_POST['email'];
-            echo($password);
+        include_once("koneksi.php");
 
-            include_once("koneksi.php");
+        $result = mysqli_query($mysqli,"INSERT INTO user(nama,username,password,level,email)
+         VALUES('$nama','$username','$password','$level','$email')");
+         
+          header("location:index.php");
+    }
 
-            $result = mysqli_query($mysqli,"INSERT INTO user(nama,username,password,level,email)
-            VALUES('$nama','$username','$password','$level','$email')");
+    // if (isset($_POST['Submit'])) {
+    // $nama = $_POST['nama'];
+    // $username = $_POST['username'];
+    // $password = $_POST['password'];
+    // $level = $_POST['level'];
+    // $email = $_POST['email'];
+    // echo($password);
 
-            header("location:index.php");
-        }
-        ?>
+    // $method = "AES-256-CBC";
+    // $key = "encryptionKey123";
+    // $options = 0;
+    // $iv = '1234567891011121';
+    // $encryptedPassword = openssl_encrypt($password, $method, $key, $options, $iv);
+
+    // include_once("koneksi.php");
+
+    // $result = mysqli_query($mysqli, "INSERT INTO user(nama, username, password, level, email)
+    //          VALUES('$nama', '$username', '$encryptedPassword', '$level', '$email')");
+
+//     header("location:index.php");
+// }
+?>
+
 
 </body>
 </html>
